@@ -1,0 +1,68 @@
+<!-- table days -->
+
+
+<!-- <!doctype html>
+
+<html>
+
+<body>
+    {{data}}
+<table border="2">
+<tr><th>Days</th></tr>
+
+<tr><td>Monday</td></tr>
+<tr><td>Tuesday</td></tr>
+<tr><td>Wednesday</td></tr>
+<tr><td>Thurday</td></tr>
+<tr><td>Friday</td></tr>
+<tr><td>Saturday</td></tr>
+<tr><td>Sunday</td></tr>
+
+</table>
+<br><br>
+
+using jinja method
+<table border="1">
+<tr><th>Days</th></tr>
+{%for i in data%}
+<tr> <td> {{i}} </td> </tr>
+{%endfor%}
+</table>
+</body>
+</html> -->
+
+
+
+<!-- task to display mypost as an table -->
+
+<!doctype html>
+
+<html>
+
+<body>
+    {{data}}
+    <br>
+
+<table border="1">
+
+    <tr>
+        <th>id</th>
+        <th>title</th>
+        <th>content</th>
+        <th>published</th>
+        <th>created_at</th>
+    </tr>
+    {%for i in data%}
+    <tr> 
+        <td> {{i.id}} </td> 
+        <td> {{i.title}} </td> 
+        <td> {{i.content}} </td>
+        <td> {{i.published}} </td>
+        <td> {{i.created_at}} </td> 
+    </tr> 
+    {%endfor%}
+</table>
+</body>
+</html>
+
+

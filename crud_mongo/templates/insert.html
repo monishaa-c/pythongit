@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>insert</title>
+    </head>
+    <body>
+        <style>
+            body
+            {
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items:center;
+                margin:50px;
+            }
+            fieldset 
+            {
+                background-color: lightblue;
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items:center;
+                width:50%;
+                height: 50%;
+}
+
+legend {
+  background-color:gray;
+  color: white;
+  padding: 5px 10px;
+  font-size:large;
+
+}
+input {
+  margin: 20px;
+  font-size:large;
+}
+
+
+
+
+        </style>
+        <form action="/insert" method="post">
+        
+        <fieldset>
+            <legend>Form:</legend>
+            <input name="id" placeholder="Enter the id:">
+            <input name="name" placeholder="Enter the Name:">
+            <input name="mobile" placeholder="Enter the Mobile Number:">
+            <input type="submit">
+        </fieldset>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON TABLE</title>
+</head>
+<body>
+    
+    <table border="2">
+        <tr>
+            <th>ID</th>
+            <th>EMAIL</th>
+            <th>FIRST_NAME</th>
+            <th>LAST_NAME</th>
+            <th>AVATAR</th>
+        </tr>
+        {%for i in data%}
+        <tr>
+            <td>{{i.get("id")}}</td>
+            <td>{{i.get("email")}}</td>
+            <td>{{i.get("first_name")}}</td>
+            <td>{{i.get("last_name")}}</td>
+            <td>{{i.get("avatar")}}</td>
+        </tr>       
+        {%endfor%}
+    </table>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>insert</title>
+    </head>
+    <body>
+        <style>
+            body
+            {
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items:center;
+            }
+            input {
+  margin: 20px;
+  font-size:large;
+  
+}
+legend {
+  background-color:gray;
+  color: white;
+  padding: 5px 10px;
+  font-size:large;
+
+}
+fieldset 
+            {
+                background-color: lightblue;
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items:center;
+                width:50%;
+                height: 50%;
+}
+
+            
+
+        </style>
+        <form action="/update/{{data.id}}" method="post">
+            <fieldset>
+                <legend>Form:</legend>
+            <input name="id" placeholder="Enter the id:" value={{data.id}}>
+            <input name="name" placeholder="Enter the Name:" value={{data.name}}>
+            <input name="mobile" placeholder="Enter the Mobile Number" value={{data.mobile}}>
+            <input type="submit">
+            </fieldset>
+        </form>
+    </body>
+</html>
